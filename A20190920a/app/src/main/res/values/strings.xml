@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A20190920a</string>
+    <string name="success_login">Login Success!</string>
+    <string name="failed_login">Login Failed!</string>
+</resources>

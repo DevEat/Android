@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="My Scope manager\n- 나의 지인 / 연락처 / 메시지 관리 -"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Enter your username"
+            android:inputType=""
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pass_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/sign_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="#32B5E5"
+            android:text="Sign-in"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/create_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageButton
+                android:id="@+id/finger_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                app:srcCompat="@drawable/finger_icon" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/Google_Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                app:srcCompat="@drawable/google_icon" >
+            </com.google.android.gms.common.SignInButton>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
